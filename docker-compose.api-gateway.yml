@@ -1,7 +1,7 @@
 name: traefik
 
 services:
-  traefix:
+  traefik:
     image: traefik:latest
     command:
       - '--api=true'
