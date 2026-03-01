@@ -9,7 +9,7 @@ services:
       - '--log.level=DEBUG'
       - '--providers.docker=true'
       - '--providers.docker.exposedbydefault=false'
-      - '--entrypoints.traefik.address=8080'
+      - '--entrypoints.traefik.address=:8080'
       - '--entrypoints.web.address=:80'
       - '--entrypoints.websecure.address=:443'
       - '--certificatesresolvers.cert-resolver.acme.httpchallenge=true'
