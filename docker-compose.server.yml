@@ -17,7 +17,7 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.my-router.rule=Host(`rajesh.online`)'
+      - 'traefik.http.routers.my-router.rule=Host(`rajeshb.ddns.net`)'
       - 'traefik.http.services.my-router.loadbalancer.server.port=80'
       - 'traefik.http.routers.my-router.entrypoints=websecure'
       - 'traefik.docker.network=project-a-network'
